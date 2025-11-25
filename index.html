@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home Provider Tuition — Patna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+
+<!-- FIX: Background canvas goes BEHIND everything -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- NAVBAR -->
+<header class="glass-nav" style="z-index:1000;">
+  <div class="brand">
+    <svg class="logo-img" width="48" height="48" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#4fa6ff"/>
+          <stop offset="1" stop-color="#8b5cf6"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <circle cx="50" cy="50" r="35" fill="url(#g1)" filter="url(#glow)"/>
+    </svg>
+    <span class="brand-text">Home Provider Tuition</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#subjects">Subjects</a></li>
+    <li><a href="#availability">Availability</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero section">
+  <div class="hero-inner animate-fade">
+
+    <div class="hero-left">
+      <h1>Premium Home Tuition in Patna</h1>
+      <p class="tagline">Nursery to Class 12 • All Subjects • Competitive Exam Prep</p>
+
+      <div class="hero-actions">
+        <button class="cta-btn" onclick="scrollToContact()">Enquire Now</button>
+        <a class="ghost-btn" href="#subjects">View Subjects</a>
+      </div>
+
+      <ul class="trust-list">
+        <li>Experienced Tutors</li>
+        <li>Personalized Learning</li>
+        <li>Home & Online Tuition</li>
+      </ul>
+    </div>
+
+    <div class="hero-right">
+      <div class="card glass-box">
+        <h3>Quick Contact</h3>
+        <p><strong>Email:</strong> cptupendra@gmail.com</p>
+        <p><strong>Phone:</strong> 62533 76161</p>
+        <p><strong>Phone:</strong> 86114 97672</p>
+        <p><strong>Address:</strong> Bypass Road, Near Patna</p>
+        <button class="mini-cta" onclick="scrollToContact()">Send Enquiry</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about section animate-up">
+  <div class="container">
+    <h2>About Home Provider Tuition</h2>
+    <p>
+      At Home Provider Tuition (HPT), we provide high-quality home tutoring services in Patna.
+      Our tutors are trained, experienced and highly dedicated.
+    </p>
+
+    <div class="mission-grid">
+      <div class="mission">
+        <h4>Our Vision</h4>
+        <p>To deliver exceptional learning support directly at home.</p>
+      </div>
+      <div class="mission">
+        <h4>Managed By</h4>
+        <p><strong>Upender Kumar</strong></p>
+      </div>
+      <div class="mission">
+        <h4>Approach</h4>
+        <p>Conceptual clarity, personal attention, and weekly progress tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section id="subjects" class="subjects section animate-up">
+  <div class="container">
+    <h2>Subjects We Offer</h2>
+
+    <div class="subject-grid">
+
+      <div class="subject-card neon">
+        <h3>Mathematics</h3>
+        <p>Algebra, Geometry, Trigonometry, Calculus Basics</p>
+      </div>
+
+      <div class="subject-card neon">
+        <h3>Science</h3>
+        <p>Physics, Chemistry, Biology (Class 6–12)</p>
+      </div>
+
+      <div class="subject-card neon">
+        <h3>Commerce</h3>
+        <p>Accounts, Economics, Business Studies</p>
+      </div>
+
+      <div class="subject-card neon">
+        <h3>Humanities</h3>
+        <p>History, Civics, Geography, Sociology</p>
+      </div>
+
+      <div class="subject-card neon">
+        <h3>General Competition</h3>
+        <p>Aptitude, Reasoning, GK</p>
+      </div>
+
+      <div class="subject-card neon">
+        <h3>B.Ed Coaching</h3>
+        <p>Pedagogy, Teaching Methods</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY -->
+<section id="availability" class="availability section animate-up">
+  <div class="container">
+    <h2>Tuition Availability</h2>
+
+    <div class="availability-grid">
+      <div class="plan">
+        <h4>Nursery – Class 5</h4>
+        <ul>
+          <li>Foundational Learning</li>
+          <li>Play-based Development</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h4>Class 6 – 8</h4>
+        <ul>
+          <li>Concept Strengthening</li>
+          <li>Weekly Assessment</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h4>Class 9 – 10</h4>
+        <ul>
+          <li>Board Exam Preparation</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h4>Class 11 – 12</h4>
+        <ul>
+          <li>Science / Commerce / Humanities</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h4>Competitive</h4>
+        <ul>
+          <li>Aptitude + Reasoning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact section animate-up">
+  <div class="container contact-grid">
+
+    <div class="glass-box contact-left">
+      <h2>Contact Us</h2>
+      <p>We respond within 24 hours.</p>
+
+      <p><strong>Email:</strong> cptupendra@gmail.com</p>
+      <p><strong>Phone:</strong> 62533 76161</p>
+      <p><strong>Phone:</strong> 86114 97672</p>
+      <p><strong>Address:</strong> Bypass Road, Near Patna</p>
+    </div>
+
+    <form class="glass-box form" onsubmit="event.preventDefault(); submitForm();">
+      <h3>Send Enquiry</h3>
+
+      <input id="name" type="text" placeholder="Your Name" required>
+      <input id="email" type="email" placeholder="Email Address" required>
+      <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="cta-btn">Submit</button>
+        <button type="button" class="ghost-btn" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer section">
+  © 2025 Home Provider Tuition • Developed by Bezalel
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
