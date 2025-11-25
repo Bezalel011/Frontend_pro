@@ -25,7 +25,8 @@ Enhanced contact form with validation (UI-only)
 Pure frontend — no backend required
 
 🛠 Technology Stack
-Category	   Technology
 Frontend	   HTML5, CSS3, JavaScript
+
 Version      Control	Git & GitHub
+
 Design	     Glassmorphism, Neon Glow UI, Dark Theme
