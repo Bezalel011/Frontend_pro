@@ -25,6 +25,7 @@ Enhanced contact form with validation (UI-only)
 Pure frontend — no backend required
 
 🛠 Technology Stack
+
 Frontend	   HTML5, CSS3, JavaScript
 
 Version      Control	Git & GitHub
