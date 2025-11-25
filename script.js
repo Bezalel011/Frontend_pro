@@ -1,6 +1,4 @@
-/* ------------------------------------------------------
-   STARFIELD BACKGROUND
------------------------------------------------------- */
+
 const canvas = document.getElementById("bgCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -62,9 +60,7 @@ function drawBackground() {
 }
 drawBackground();
 
-/* ------------------------------------------------------
-   SCROLL REVEAL
------------------------------------------------------- */
+
 function inViewport(el, offset = 0.2) {
   const rect = el.getBoundingClientRect();
   return rect.top <= window.innerHeight * (1 - offset);
@@ -85,9 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(handleReveal, 600);
 });
 
-/* ------------------------------------------------------
-   FORM HANDLING (UI ONLY)
------------------------------------------------------- */
+
 function submitForm() {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -109,16 +103,12 @@ function resetForm() {
   document.querySelector(".form").reset();
 }
 
-/* ------------------------------------------------------
-   SMOOTH SCROLL TO CONTACT
------------------------------------------------------- */
+
 function scrollToContact() {
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
 
-/* ------------------------------------------------------
-   HERO PARALLAX EFFECT
------------------------------------------------------- */
+
 const hero = document.querySelector(".hero");
 
 if (hero) {
